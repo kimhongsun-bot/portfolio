@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,51 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/******************** NAVBAR ********************/
+.navbar-brand {
+  width: 80%;
+}
+.logo {
+  width: 17.25rem;
+}
+
+/**** MENU LINKS *****/
+nav a.nav-link {
+  font-weight: 300;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: -7px;
+}
+
+nav .nav-item {
+  padding: 1rem;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+nav button .navbar-toggler-icon {
+  color: white;
+}
+
+/* nav .container {
+  width: 95%;
+  margin: auto;
+} */
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1rem solid green;
+  /* box-shadow: honeydew 0rem 0rem 0.5rem 0.1rem; */
 }
