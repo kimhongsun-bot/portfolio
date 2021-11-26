@@ -46,6 +46,9 @@ body {
 .navbar-brand {
   width: 80%;
 }
+/* nav {
+  z-index: 2;
+} */
 .logo {
   width: 17.25rem;
 }
@@ -82,4 +85,54 @@ nav button .navbar-toggler-icon {
 .navbar-nav > li > a:hover {
   border-bottom: 0.1rem solid green;
   /* box-shadow: honeydew 0rem 0rem 0.5rem 0.1rem; */
+}
+
+.header-wraper {
+  position: relative;
+  background-image: url("./bg-header.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-info h1 {
+  color: rgb(255, 186, 57);
+  text-transform: uppercase;
+}
+
+.typed-text {
+  font-size: 1.6rem;
+  color: antiquewhite;
+}
+
+.btn-main-offer {
+  border: 1px solid rgb(243, 171, 171);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: aliceblue;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
 }
