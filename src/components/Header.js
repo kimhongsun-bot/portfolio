@@ -5,12 +5,11 @@ function Header() {
     return (
         <div className="header-wraper">
             <div className="main-info">
-                <canvas></canvas>
                 <h1>web and mobile development</h1> 
                 <Typed 
                 className="typed-text"
-                strings={["React Native", "Flutter", "Python", "NodeJS", "HTML, CSS, JavaScript", "React JS"]} 
-                typeSpeed={40}
+                strings={["React Native", "Flutter", "Python", "NodeJS", "HTML, CSS, JavaScript", "React JS", "Responsive Design"]} 
+                typeSpeed={50}
                 backSpeed={60}
                 loop
                 />

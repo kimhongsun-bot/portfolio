@@ -2,18 +2,19 @@ import './App.css';
 import Particles from 'react-particles-js';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <>
     <Particles
         style={{ position: "absolute" }}
-        height="95%"
-        width="95%"
         params={{
           particles: {
             color: {
-              value: "#000000"
+              value: "#ff3"
             },
             line_linked: {
               color: {
@@ -21,16 +22,19 @@ function App() {
               }
             },
             number: {
-              value: 50
+              value: 70
             },
             size: {
-              value: 3
+              value: 4
             }
           }
         }}
       />
     <Navbar/>
     <Header/>
+    <About/>
+    <Services/>
+    <Contact/>
     </>
   );
 }

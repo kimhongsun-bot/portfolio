@@ -1,54 +1,19 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
 }
+
 /******************** NAVBAR ********************/
+
+nav {
+  z-index: 2;
+  position: sticky;
+}
 .navbar-brand {
   width: 80%;
 }
-/* nav {
-  z-index: 2;
-} */
+
 .logo {
   width: 17.25rem;
 }
@@ -87,12 +52,14 @@ nav button .navbar-toggler-icon {
   /* box-shadow: honeydew 0rem 0rem 0.5rem 0.1rem; */
 }
 
+/******************* HEADER ********************/
 .header-wraper {
   position: relative;
   background-image: url("./bg-header.png");
   background-size: cover;
   background-position: center;
   height: 90vh;
+  /* z-index: -1; */
 }
 .main-info {
   display: flex;
@@ -105,13 +72,13 @@ nav button .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: 300;
-  z-index: 1;
+  /* font-weight: 400; */
   font-family: "Poppins", sans-serif;
+  z-index: 2;
 }
 
 .main-info h1 {
-  color: rgb(255, 186, 57);
+  color: rgb(47, 35, 11);
   text-transform: uppercase;
 }
 
@@ -128,11 +95,197 @@ nav button .navbar-toggler-icon {
   color: aliceblue;
   margin: 2rem;
   text-decoration: none;
+  z-index: 2;
+}
+.btn-main-offer:hover {
+  background-color: aliceblue;
 }
 
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 3;
+  z-index: 1;
+}
+
+/*------------------------ ABOUT ------------------------*/
+
+.main-about {
+  display: flex;
+  width: 95%;
+  padding: 3rem;
+  /* background-color: lightblue; */
+  margin: auto;
+}
+.main-about div {
+  width: 50%;
+}
+.main-about .profile {
+  width: 50%;
+  /* background-color: blue; */
+  text-align: center;
+  padding: 5rem;
+}
+.main-about .profile h4 {
+  padding-top: 1rem;
+}
+.main-about .profile h5 {
+  color: rgba(181, 176, 250, 0.842);
+}
+.main-about .personal-info {
+  width: 50%;
+  /* background-color: red; */
+  padding: 3rem;
+}
+.main-about .personal-info .type-text {
+  font-size: 16px;
+}
+.main-about .personal-info h2,
+h4 {
+  color: orange;
+}
+.main-about .profile .img-wraper img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid orange;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.main-about .profile .img-wraper {
+  width: 310px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid rgba(181, 176, 250, 0.842);
+  margin: auto;
+}
+
+/********************* SERVICES ********************/
+.services {
+  background-color: rgb(235, 210, 210);
+  padding-bottom: 3rem;
+}
+.services h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  padding: 2rem;
+  /* color: orange; */
+}
+.services .card-wraper {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  margin-top: 2rem;
+  /* background-color: green; */
+}
+.services .card-wraper div {
+  /* background-color: lightblue; */
+  width: 20%;
+  /* height: 100px; */
+  flex: auto;
+  text-align: center;
+  /* border: 1px solid black; */
+  margin: 1rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-bottom: 0.5rem solid orange;
+}
+.services .card-wraper div h3 {
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  color: orange;
+  font-weight: 300;
+}
+.services .card-wraper div .icon-wrap {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  /* font-size: 3rem; */
+  color: rgba(209, 199, 199, 0.904);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1rem; */
+  background-color: rgb(112, 102, 209);
+  border: none;
+  display: flex;
+}
+.services .card-wraper div .icon-wrap .icon {
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  /* background-color: blue; */
+}
+.services .card-wraper div p {
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+/******************** CONTACT *******************/
+.contact-wrap {
+  background-color: rgb(45, 41, 54);
+}
+.contact-wrap h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  padding-top: 2rem;
+}
+.contact-wrap .form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  /* background-color: lightsalmon; */
+}
+.contact-wrap .form div {
+  /* margin: auto; */
+  flex: auto;
+  padding: 1rem;
+}
+.contact-wrap .form div span {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  /* padding: 1rem; */
+}
+.contact-wrap .form div input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid orange;
+  width: 90%;
+  padding-left: 0.5rem;
+  color: whitesmoke;
+}
+.contact-wrap .form div input:focus {
+  outline: none;
+}
+.contact-wrap .form div textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid orange;
+  width: 90%;
+  padding-left: 0.5rem;
+  color: whitesmoke;
+}
+.contact-wrap .form div button {
+  background: none;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  border: 1px solid orange;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.contact-wrap .form div .row {
+  color: orange;
+  text-align: center;
 }
