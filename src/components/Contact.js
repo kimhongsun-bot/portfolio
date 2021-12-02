@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Result =() => {
     return (
@@ -19,7 +20,7 @@ function Contact(props) {
     const sendEmail=(e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_do01pyf', 'template_1mowuhe', e.target, 'user_GqIseaA32Ud9C8F0GZtA8')
+        emailjs.sendForm('service_do01pyf', 'template_oi2vzj5', e.target, 'user_GqIseaA32Ud9C8F0GZtA8')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -79,6 +80,9 @@ function Contact(props) {
                     <div className="row">{result ? <Result/> :null}</div>
                 </div>
             </form>
+            <div className="social-wraper">
+
+            </div>
         </div>
     )
 }

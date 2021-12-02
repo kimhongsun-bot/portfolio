@@ -5,16 +5,16 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    <Particles
-        style={{ position: "absolute" }}
+    <main id="home">
+      <Particles
         params={{
           particles: {
             color: {
-              value: "#ff3"
+              value: "#000000"
             },
             line_linked: {
               color: {
@@ -22,20 +22,28 @@ function App() {
               }
             },
             number: {
-              value: 70
+              value: 50
             },
             size: {
-              value: 4
+              value: 3
             }
           }
         }}
-      />
-    <Navbar/>
-    <Header/>
-    <About/>
-    <Services/>
-    <Contact/>
-    </>
+        />
+      <Navbar sticky="top" />
+      <section className="home">
+        <Header/>
+      </section>
+      <section className="about" id="about">
+        <About/>
+      </section>
+      <section className="services" id="services">
+        <Services/>
+      </section>
+      <section className="contact" id="contact">
+        <Contact/>
+      </section>
+    </main>
   );
 }
 

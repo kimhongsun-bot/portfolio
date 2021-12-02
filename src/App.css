@@ -5,10 +5,12 @@ body {
 }
 
 /******************** NAVBAR ********************/
-
-nav {
+/* nav {
+  position: fixed;
+} */
+.navbar {
+  display: flex;
   z-index: 2;
-  position: sticky;
 }
 .navbar-brand {
   width: 80%;
@@ -19,7 +21,7 @@ nav {
 }
 
 /**** MENU LINKS *****/
-nav a.nav-link {
+.navbar a.nav-link {
   font-weight: 300;
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -27,25 +29,26 @@ nav a.nav-link {
   justify-content: space-around;
   margin-bottom: -7px;
 }
-
-nav .nav-item {
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.navbar .nav-item {
   padding: 1rem;
 }
 
-nav ul li {
+.navbar ul li {
   text-transform: uppercase;
 }
 
-nav button .navbar-toggler-icon {
+.navbar button .navbar-toggler-icon {
   color: white;
 }
 
-/* nav .container {
-  width: 95%;
-  margin: auto;
+/* .nav-item > .active {
+  border-bottom: 0.1rem solid green;
 } */
-
-.navbar-nav > li > a.active,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {
   border-bottom: 0.1rem solid green;
@@ -137,9 +140,6 @@ nav button .navbar-toggler-icon {
   /* background-color: red; */
   padding: 3rem;
 }
-.main-about .personal-info .type-text {
-  font-size: 16px;
-}
 .main-about .personal-info h2,
 h4 {
   color: orange;
@@ -226,6 +226,10 @@ h4 {
   font-family: "Poppins", sans-serif;
   padding: 1rem;
 }
+.services .card-wraper div:hover {
+  transform: translateY(-1rem);
+  transition: 0.5s ease-in-out;
+}
 
 /******************** CONTACT *******************/
 .contact-wrap {
@@ -288,4 +292,53 @@ h4 {
 .contact-wrap .form div .row {
   color: orange;
   text-align: center;
+}
+
+/****************** RESPONSIVE DESIGN ********************/
+@media screen and (max-width: 768px) {
+  /**** About ****/
+  .main-about {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .main-about div {
+    width: 100%;
+    margin: auto;
+  }
+  .main-about .profile {
+    width: 100%;
+    padding: 0;
+  }
+  .main-about .profile .img-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    border: 2px solid rgba(181, 176, 250, 0.842);
+  }
+  .main-about .profile .img-wraper img {
+    justify-content: center;
+    align-items: center;
+  }
+  .main-about .personal-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  /*** Services ***/
+  .services .card-wraper {
+    display: block;
+    text-align: center;
+    /* width: 50%; */
+  }
+  .services .card-wraper div {
+    width: 90%;
+    flex: none;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
 }

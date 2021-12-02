@@ -1,6 +1,5 @@
 import React from 'react'
 import Profile from '../developers_profile.jpg';
-import Typed from 'react-typed';
 
 function About() {
     return (
