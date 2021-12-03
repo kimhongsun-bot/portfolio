@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Profile from '../developers_profile.jpg';
 
 function About() {
+    useEffect (()=>{
+        document.title = "Kimhong Sun's Portfolio"
+    })
     return (
         <div className="main-about">
             <div className="profile">

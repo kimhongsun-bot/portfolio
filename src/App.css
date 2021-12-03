@@ -10,7 +10,7 @@ body {
 } */
 .navbar {
   display: flex;
-  z-index: 100;
+  z-index: 3;
 }
 .navbar-brand {
   width: 80%;
@@ -32,7 +32,7 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 3;
 }
 .navbar .nav-item {
   padding: 1rem;
