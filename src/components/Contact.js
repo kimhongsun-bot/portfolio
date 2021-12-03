@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Result =() => {
     return (
@@ -68,9 +69,10 @@ function Contact(props) {
                         autoComplete="none"
                     />
                     <br />
-                    <br/>
                 </div>
+
                 <div className="formWord">
+                    <br />
                     <span>Message</span>
                     <br />
                     <textarea name="message" required></textarea>
@@ -80,9 +82,6 @@ function Contact(props) {
                     <div className="row">{result ? <Result/> :null}</div>
                 </div>
             </form>
-            <div className="social-wraper">
-
-            </div>
         </div>
     )
 }
