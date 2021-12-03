@@ -99,6 +99,7 @@ body {
   margin: 2rem;
   text-decoration: none;
   z-index: 2;
+  cursor: pointer;
 }
 .btn-main-offer:hover {
   background-color: aliceblue;
